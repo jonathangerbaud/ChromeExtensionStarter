@@ -1,0 +1,17 @@
+/* CSS for popup.html */
+
+html {
+    overflow: hidden;
+}
+
+body {
+    /* Max size for the popup */
+    width: 800px;
+    height: 600px;
+    overflow: hidden;
+    margin: 0;
+}
+
+#content {
+    padding: 10px;
+}
