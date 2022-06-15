@@ -1,0 +1,24 @@
+{
+    "name": "Fullscreen Page Sample",           // Name of your Chrome Extension
+    "description": "Chrome Starter Extension",  // Quick description of the extension
+    "version": "1.0.0",                         // Version number
+    "manifest_version": 3,                      // Always 3
+    "action": {                                 // Action when clicking on the extension icon in the browser
+        "default_icon": {                       // The icon display in the extension bar of the browser
+            "16": "icons/icon16.png",           // The icon in different sizes
+            "32": "icons/icon32.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        },
+        "default_title": "Fullscren Page Sample",// Message that will appear when hovering the extension icon, can be different from the name if needed
+    },
+    "background": {                             // Here we define our background script
+        "service_worker": "service-worker.js"   // That will handle opening the fullscreen page 
+    },
+    "icons": {                                  // Extension icon, in different sizes, used for extension management page, the permissions warning, and favicon
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    }
+}

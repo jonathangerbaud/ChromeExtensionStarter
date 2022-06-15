@@ -1,0 +1,34 @@
+/* CSS for popup.html */
+
+html {
+    overflow: hidden;
+}
+
+body {
+    /* 
+    Size for the popup
+    You can change those values to change the popup size
+    */
+    width: 400px;
+    height: 600px;
+
+    /* Additional CSS to style the popup */
+    overflow: hidden;
+    margin: 0;
+    background: #334155;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+#content {
+    padding: 30px;
+}
+
+#content p {
+    font-size: 14pt;
+}
+
+#title {
+    display: flex;
+    column-gap: 20px;
+}
