@@ -1,0 +1,55 @@
+{
+    "name": "Inject JS Page Sample",
+    "description": "Chrome Starter Extension",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "action": {
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "32": "icons/icon32.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        },
+        "default_title": "Inject JS Page Sample"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.google.com/*",
+                "https://*.microsoft.com/*"
+            ],
+            "all_frames": true,
+            "js": [
+                "scripts/google-microsoft.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://*.facebook.com/groups/*"
+            ],
+            "all_frames": true,
+            "js": [
+                "scripts/fb.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [ 
+                "icons/icon128.png", 
+                "images/close.png" 
+            ],
+            "matches": [
+                "https://*.google.com/*",
+                "https://*.microsoft.com/*",
+                "https://*.facebook.com/*"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    }
+}
