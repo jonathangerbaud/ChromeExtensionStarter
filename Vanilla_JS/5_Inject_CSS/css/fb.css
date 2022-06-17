@@ -1,0 +1,33 @@
+/* We are overriding some of Facebook CSS vars to change the design a bit :) */
+
+/* Fb light mode */
+:root {
+    --nav-bar-background: #8866ff !important;
+    --primary-button-background: yellow !important;
+    --primary-text: red !important;
+    --primary-icon: red !important;
+}
+
+/*  Fb dark mode */
+.__fb-dark-mode {
+    --nav-bar-background: #8866ff !important;
+    --primary-button-background: yellow !important;
+    --primary-text: greenyellow !important;
+    --primary-icon: greenyellow !important;
+}
+
+
+/* -------------------- */
+
+/* 
+    Of course you are free to inject whatever CSS you need if you were to inject some HTML of
+    your own for exemple that would need styling
+
+    The following don't do anything, it's just for the sake of exemple
+*/
+
+ .my-super-html-element {
+     font-size: 16pt;
+     color: #336699;
+     padding: 10px;
+ }
