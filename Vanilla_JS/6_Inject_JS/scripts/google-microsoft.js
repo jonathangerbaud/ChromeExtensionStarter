@@ -4,7 +4,7 @@ var div = document.createElement("div");
 div.style = "background-color: #00000099; position: fixed; top: 0; left: 0; z-index: 100000; display: flex; align-items: center; place-content: center; width: 100vw; height: 100vh";
 
 let content = document.createElement("div");
-content.style = "background-color: #334155; color: #ffffff; text-align: center; padding: 30px; display: flex; flex-direction: column; place-content: center; width: 600px; height: 400px;";
+content.style = "background-color: #334155; color: #ffffff; text-align: center; padding: 30px; display: flex; flex-direction: column; place-content: center; width: 600px; height: 400px; box-sizing: content-box";
 
 let title = document.createElement("div");
 

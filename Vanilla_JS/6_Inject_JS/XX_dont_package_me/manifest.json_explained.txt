@@ -1,0 +1,55 @@
+{
+    "name": "Inject JS Page Sample",            // Name of your Chrome Extension
+    "description": "Chrome Starter Extension",  // Quick description of the extension
+    "version": "1.0.0",                         // Version number
+    "manifest_version": 3,                      // Always 3
+    "action": {                                 // Action when clicking on the extension icon in the browser
+        "default_icon": {                       // The icon display in the extension bar of the browser
+            "16": "icons/icon16.png",           // The icon in different sizes
+            "32": "icons/icon32.png",
+            "48": "icons/icon48.png",
+            "128": "icons/icon128.png"
+        },
+        "default_title": "Inject JS Page Sample",// Message that will appear when hovering the extension icon, can be different from the name if needed
+    },
+    "content_scripts": [                         // This is where you define which script will be injected in which page
+        {
+            "matches": [                         // Here we inject scripts/google-microsoft.js in all google.com and microsoft.com pages
+                "https://*.google.com/*",
+                "https://*.microsoft.com/*"
+            ],
+            "all_frames": true,
+            "js": [
+                "scripts/google-microsoft.js"
+            ]
+        },
+        {
+            "matches": [                         // Here we inject scripts/fb.js in all facebook groups pages
+                "https://*.facebook.com/groups/*"
+            ],
+            "all_frames": true,
+            "js": [
+                "scripts/fb.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [               // Here we define the assets we want to be accessible from the webpages that we inject js scripts in
+        {
+            "resources": [ 
+                "icons/icon128.png",            // Our js script will add a dialog overlay using the extension's icon and a close icon
+                "images/close.png" 
+            ],
+            "matches": [
+                "https://*.google.com/*",       // Match all of google, microsoft and facebook websites
+                "https://*.microsoft.com/*",    // Note that you can only match domains, not paths (https://*.facebook.com/groups/* wouldn't work for example here)
+                "https://*.facebook.com/*"
+            ]
+        }
+    ],
+    "icons": {                                  // Extension icon, in different sizes, used for extension management page, the permissions warning, and favicon
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+    }
+}
