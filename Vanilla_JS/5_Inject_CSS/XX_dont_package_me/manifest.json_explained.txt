@@ -4,7 +4,7 @@
     "version": "1.0.0",                         // Version number
     "manifest_version": 3,                      // Always 3
     "action": {                                 // Action when clicking on the extension icon in the browser
-        "default_icon": {                       // The icon display in the extension bar of the browser
+        "default_icon": {                       // The icon that is displayed in the extension bar of the browser
             "16": "icons/icon16.png",           // The icon in different sizes
             "32": "icons/icon32.png",
             "48": "icons/icon48.png",

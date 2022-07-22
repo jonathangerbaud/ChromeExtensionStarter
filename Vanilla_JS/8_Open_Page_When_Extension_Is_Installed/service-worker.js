@@ -8,15 +8,20 @@ chrome.runtime.onInstalled.addListener((reason) =>
 {
     console.log("on installed", reason);
     if (reason.reason === chrome.runtime.OnInstalledReason.INSTALL)
-        openDemoTab();
+        openWelcomeTab();
 });
 
 // If you want that a click on the extension icon opens the welcome page
-chrome.action.onClicked.addListener(openDemoTab);
+chrome.action.onClicked.addListener(openHomeTab);
 
 // Open welcome page in a new tab
-function openDemoTab()
+function openWelcomeTab()
 {
-    console.log("open tab");
+    chrome.tabs.create({ url: 'welcome/welcome.html' });
+}
+
+// Open welcome page in a new tab
+function openHomeTab()
+{
     chrome.tabs.create({ url: 'index/index.html' });
 }

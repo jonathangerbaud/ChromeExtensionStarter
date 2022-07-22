@@ -1,0 +1,40 @@
+#cer-container {
+    position: absolute;
+    top: 80px;
+    right: 10px;
+    border-radius: 4px;;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    background: #334155;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    z-index: 1000;
+    gap: 20px;
+}
+
+#cer-container button {
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+    font-size: 14pt;
+}
+
+#cer-container button:hover {
+    background-color: orange;
+}
+
+#cer-container button:disabled {
+    cursor: not-allowed;
+    background-color: grey;
+    color: darkgray;
+}
+
+#cer-container button:disabled:hover {
+    cursor: not-allowed;
+}
