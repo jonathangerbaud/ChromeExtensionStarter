@@ -1,5 +1,5 @@
 {
-    "name": "Open Page When Extension Is Installed Sample",
+    "name": "React App with CRA Example",
     "description": "Chrome Starter Extension",
     "version": "1.0.0",
     "manifest_version": 3,
@@ -10,7 +10,7 @@
             "48": "icons/icon48.png",
             "128": "icons/icon128.png"
         },
-        "default_title": "Open Page When Extension Is Installed Sample"
+        "default_title": "React App with CRA Example"
     },
     "background": {
         "service_worker": "service-worker.js"

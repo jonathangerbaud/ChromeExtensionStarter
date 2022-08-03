@@ -26,7 +26,10 @@ build()
     # Copy the required files for a chrome extension: manifest, icons, etc...
     cp -r ../chrome_ext_source/* ../chrome_ext_build  
 
-    # 4. We're done :)
+    # 4. Delete useless file. We don't need a robots.txt for a Chrome Extension
+    rm ../chrome_ext_build/robots.txt
+
+    # 5. We're done :)
     echo "done"
 
     sleep 30
