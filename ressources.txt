@@ -1,9 +1,0 @@
-Useful links
--> chrome api ref
--> chrome documentatin
--> console chrome web store
-
-https://developer.chrome.com/docs/extensions/
-https://developer.chrome.com/docs/extensions/reference/
-
-https://chrome.google.com/webstore/devconsole
