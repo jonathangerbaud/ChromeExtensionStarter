@@ -17,7 +17,7 @@ export function App() {
 
         <img src="assets/card-image.jpg" />
 
-        <div className="p-3 text-left mb-2">This is an example of a simple card component created with MUI</div>
+        <div className="p-3 text-left mb-2">This is an example of a simple card component created with TailwindCSS</div>
 
         <div className="flex flex-row space-x-3 p-3 text-slate-700">
           <FavoriteIcon />

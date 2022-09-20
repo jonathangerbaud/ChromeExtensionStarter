@@ -32,7 +32,7 @@ export function Content()
                     <HStack mb="0" p="3" spacing="3">
                         <Avatar src="icon192.png" bgColor="transparent" />
                         <VStack align="start" spacing="0">
-                            <Text fontSize="md">React App with MUI</Text>
+                            <Text fontSize="md">React App with Chakra UI</Text>
                             <Text fontSize="sm">Chrome Extension Starter</Text>
                         </VStack>
                     </HStack>
@@ -45,7 +45,7 @@ export function Content()
                     />
 
                     <Text fontSize="body2" color="text.secondary" mt="3" mb="5" px="3">
-                        This is an example of a simple card component created with MUI
+                        This is an example of a simple card component created with Chakra UI
                     </Text>
 
                     <HStack px="1" mb="1">
